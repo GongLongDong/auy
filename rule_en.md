@@ -106,7 +106,7 @@
 1. **`d(a)`** → **yields 10**.  
 2. **`van(e, a)`** → **`van(10, 2)`**: after one step **8** remains; **here the second argument `a` = step 2 m**.  
 3. **`cin(e, i)`** → **`cin(8, i)`**: **`c` read as /s/ ≈ `set`**, **passes the current value (8) onward** (**hold / relay**—tighten per word as needed).  
-4. **`g(e) → g(8)`**: **like global storage**, **still 8**; **next round from the outermost loop head back to `van`** → **`van(8, 2)`**, **and so on**.
+4. **`g(e) → g(8)`**: **still 8**; **next round from the outermost loop head back to `van`** → **`van(8, 2)`**, **and so on**. **`g` need not be pinned as a “global variable”**: even if **`g` inside `-ing` is not “global”**, **when the macro-loop returns to `van` it still picks up the value handed off from `g`**—**results keep relaying around the loop**; **“global” is only a metaphor**.
 
 **Abstract motion** (Paris as goal): **“10” can be read as “the Paris goal slot”**; **`van` still moves one segment per lap**, **segment size can stay unspecified at the start**.
 
@@ -116,7 +116,39 @@
 
 ---
 
-## 9. Phonology Notes (readable with letter-`e` sense)
+## 9. Letter **`g` (get)** and examples **`gap`**, **`gut`**
+
+### 9.1 **`g` = get**
+
+- The **`g`** of English **get**: **obtain** and **pass what you already “have”** to the next function; **this step does not rewrite that value**—**the `e` handed onward stays the same**.
+
+### 9.2 **`g` inside `-ing` / loops**
+
+- **`g` does not have to mean “global”**; **when the big loop returns to `van` it reconnects to the value from `g`**; **the loop continuously passes results forward**—**“global storage” is just a figure of speech**.
+
+### 9.3 **`gap`**
+
+**`g(a) → e → p(e)`**
+
+- **`g(a)`**: **get** the chunk marked by **`a`** (**`a` (phonology sense): quantity with mass**).  
+- **`p(e)`**: **`p` ≈ part**—**split** the previous **`e`**, **opening a gap**.
+
+### 9.4 **`gut`**
+
+**`g(u) → e → t(e)`**
+
+- **`u` (signed off for this word)**: **ooze, squeeze out, emerge, surplus**; in the **defecation** frame, the **part that is expelled as stool**.  
+- **`t`**: **detach**—**pull out / expel from the body**.  
+- **Overall sense**: **gut as the bowel’s defecation function**.  
+- **General rule for `u`**: **for now, anchor on this word**; **revise when counterexamples appear**.
+
+### 9.5 **Iteration policy**
+
+- **Run with this file first**; **patch the rules when problems show up** (per session agreement).
+
+---
+
+## 10. Phonology Notes (readable with letter-`e` sense)
 
 - **`/e/` and `/ei/`**: in your system they **align for conditioning** (read with **`RULES_YIYIN.md` §4.2, `ɛ` = `ei`**).  
 - **Vowel e vs vowel i**: **e** skews **stepwise / cyclic** change; **i** skews **one continuous line to the endpoint** (read with **`e.md`**, **`/iː/`**).  
@@ -124,9 +156,9 @@
 
 ---
 
-## 10. Cross-References
+## 11. Cross-References
 
-- **Master card and glossed examples**: **`RULES_YIYIN.md`** (e.g. **`advance` §6.23**, **`act` §6.7**).  
+- **Master card and glossed examples**: **`RULES_YIYIN.md`** (e.g. **`advance` §6.23**, **`act` §6.7**, **`gap`/`gut` §6.43**).  
 - **Letter `e` canon**: **`e.md`**.  
 - **Maintenance**: by default **discussion-only, no file edits**; when you say **「更新」 / “update”**, revise **`RULES_YIYIN.md`**, **`rule.md`**, and **`rule_en.md`** **in sync**.
 
